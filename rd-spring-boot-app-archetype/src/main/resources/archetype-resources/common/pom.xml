@@ -16,6 +16,10 @@
 			<groupId>${groupId}</groupId>
 			<artifactId>api</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.zengrd.common</groupId>
+			<artifactId>rd-common</artifactId>
+		</dependency>
 	</dependencies>
 	
 	<build>
