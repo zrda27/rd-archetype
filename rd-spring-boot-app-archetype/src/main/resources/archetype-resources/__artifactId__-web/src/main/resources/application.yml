@@ -1,0 +1,20 @@
+#server
+server:
+  port: 80
+  contextPath: /${artifactId}-web
+
+spring:
+  jackson:
+    serialization:
+      indent_output: true
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      max-file-size: 100MB
+      max-request-size: 100MB
+      resolve-lazily: false
+
+${artifactId}:
+  service:
+    baseUrl: http://${artifactId}.service.zengrd.com/${artifactId}-service

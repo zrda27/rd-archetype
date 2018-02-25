@@ -1,0 +1,21 @@
+#server
+server:
+  port: 80
+  contextPath: /${artifactId}-service
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mysql.zengrd.com:3306/${artifactId}?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
+    username: ${artifactId}
+    password: ${artifactId}1213
+    test-on-boorow: true
+  jackson:
+    serialization:
+      indent_output: true
+  aop:
+    proxy-target-class: true
+    
+mybatis:
+  mapper-locations:
+    classpath*:mapper/**/*.xml

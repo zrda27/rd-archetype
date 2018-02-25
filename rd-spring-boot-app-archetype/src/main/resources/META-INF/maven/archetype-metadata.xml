@@ -8,13 +8,28 @@
 		<requiredProperty key="mainClass">
 			<defaultValue>App</defaultValue>
 		</requiredProperty>
-		<requiredProperty key="mainArtifactId">
-			<defaultValue>${artifactId}</defaultValue>
-		</requiredProperty>
 	</requiredProperties>
 	<fileSets>
 		<fileSet filtered="true" encoding="UTF-8">
-			<directory>db</directory>
+			<directory>__artifactId__-admin</directory>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>__artifactId__-api</directory>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>__artifactId__-common</directory>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>__artifactId__-parent</directory>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>__artifactId__-service</directory>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>__artifactId__-web</directory>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>__artifactId__-db</directory>
 		</fileSet>
 		<fileSet filtered="true" encoding="UTF-8">
 			<directory></directory>
@@ -24,147 +39,4 @@
 			</includes>
 		</fileSet>
 	</fileSets>
-	<modules>
-		<module dir="parent" id="parent" name="parent">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory></directory>
-					<includes>
-						<include>.gitignore</include>
-						<include>README.md</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
-		<module dir="service" id="service" name="service">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/java</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory></directory>
-					<includes>
-						<include>.gitignore</include>
-						<include>README.md</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
-		<module dir="api" id="api" name="api">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/java</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory></directory>
-					<includes>
-						<include>.gitignore</include>
-						<include>README.md</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
-		<module dir="web" id="web" name="web">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/java</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory></directory>
-					<includes>
-						<include>.gitignore</include>
-						<include>README.md</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
-		<module dir="admin" id="admin" name="admin">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/java</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory></directory>
-					<includes>
-						<include>.gitignore</include>
-						<include>README.md</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
-		<module dir="common" id="common" name="common">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/java</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/main/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>src/test/resources</directory>
-				</fileSet>
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory></directory>
-					<includes>
-						<include>.gitignore</include>
-						<include>README.md</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
-	</modules>
 </archetype-descriptor>

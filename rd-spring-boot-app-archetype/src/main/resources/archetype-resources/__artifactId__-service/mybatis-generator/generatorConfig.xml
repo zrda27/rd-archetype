@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="context1">
+        <!-- 设置数据库连接参数 -->
+        <jdbcConnection connectionURL="jdbc:mysql://mysql.zengrd.com:3306/${artifactId}?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true&amp;failOverReadOnly=false"
+            driverClass="com.mysql.jdbc.Driver" password="${artifactId}1213"
+            userId="${artifactId}" />
+            
+        <!-- 设置java类的包名targetPackage -->
+        <javaModelGenerator targetPackage="${package}.pojo.domain"
+            targetProject="src/main/java" />
+            
+        <!-- 设置mapper.xml的目录targetPackage -->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources" />
+        
+         <!-- 设置mapper类的包名targetPackage -->
+        <javaClientGenerator targetPackage="${package}.mapper"
+            targetProject="src/main/java" type="XMLMAPPER" />
+            
+        <!-- 设置需要处理的表 -->
+        <table tableName="demo" ></table>
+    </context>
+</generatorConfiguration>

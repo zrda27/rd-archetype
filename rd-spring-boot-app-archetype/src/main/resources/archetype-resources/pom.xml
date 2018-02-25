@@ -6,4 +6,13 @@
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
 	<packaging>pom</packaging>
+	
+	<modules>
+		<module>${artifactId}-admin</module>
+		<module>${artifactId}-api</module>
+		<module>${artifactId}-common</module>
+		<module>${artifactId}-parent</module>
+		<module>${artifactId}-service</module>
+		<module>${artifactId}-web</module>
+	</modules>
 </project>
