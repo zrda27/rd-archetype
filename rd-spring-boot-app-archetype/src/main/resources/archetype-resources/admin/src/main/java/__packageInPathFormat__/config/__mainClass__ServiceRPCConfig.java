@@ -8,7 +8,7 @@ import com.zengrd.common.remote.httpinvoke.HttpInvokeUtil;
 import com.zengrd.${mainArtifactId}.service.DemoService;
 
 @Configuration
-public class __mainClass__ServiceRPCConfig {
+public class ${mainClass}ServiceRPCConfig {
 	@Value("${${mainArtifactId}.service.baseUrl}")
 	private String ${mainArtifactId}ServiceBaseUrl;
 
