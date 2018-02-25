@@ -1,12 +1,12 @@
-package com.zengrd.dept.config;
+package com.zengrd.${mainArtifactId}.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableJpaRepositories({"com.zengrd.fantast17.repo"})
 @EnableTransactionManagement
+@MapperScan("com.zengrd.${mainArtifactId}.mapper")
 public class DBConfig {
 
 }

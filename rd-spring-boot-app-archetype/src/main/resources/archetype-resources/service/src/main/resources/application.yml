@@ -10,12 +10,12 @@ spring:
     username: ${mainArtifactId}
     password: ${mainArtifactId}1213
     test-on-boorow: true
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      dialect: org.hibernate.dialect.MySQL5Dialect
   jackson:
     serialization:
       indent_output: true
+  aop:
+    proxy-target-class: true
+    
+mybatis:
+  mapper-locations:
+    classpath*:mapper/**/*.xml

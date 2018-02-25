@@ -1,4 +1,4 @@
-package com.zengrd.dept.config;
+package com.zengrd.${mainArtifactId}.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
