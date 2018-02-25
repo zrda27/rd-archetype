@@ -14,3 +14,7 @@ spring:
       max-file-size: 100MB
       max-request-size: 100MB
       resolve-lazily: false
+
+dept:
+  service:
+    baseUrl: http://${mainArtifactId}.service.zengrd.com/${mainArtifactId}-service

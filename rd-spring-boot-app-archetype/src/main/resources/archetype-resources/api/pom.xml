@@ -10,7 +10,14 @@
 
 	<artifactId>${artifactId}</artifactId>
 	<packaging>jar</packaging>
-	
+
+	<dependencies>
+		<dependency>
+			<groupId>com.zengrd.common</groupId>
+			<artifactId>rd-common</artifactId>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<finalName>${mainArtifactId}-${artifactId}</finalName>
 	</build>
