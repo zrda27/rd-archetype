@@ -9,7 +9,7 @@ import com.zengrd.${mainArtifactId}.service.DemoService;
 
 @Configuration
 public class __mainClass__ServiceRPCConfig {
-	@Value("${${mainArtifactId}}.service.baseUrl}")
+	@Value("${${mainArtifactId}.service.baseUrl}")
 	private String ${mainArtifactId}ServiceBaseUrl;
 
 	@Bean
